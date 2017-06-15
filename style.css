@@ -1,0 +1,22 @@
+#chat {
+  width: 100%;
+}
+#chat > tbody {
+  width: 100%;
+}
+#chat > tbody > tr {
+  width: 100%;
+}
+#chat > tbody > tr > td > * {
+  width: 100%;
+}
+
+
+#messages > table {
+  min-height: 50vh;
+  border: 1px solid black;
+}
+#users > table {
+  min-height: 50vh;
+  border: 1px solid black;
+}

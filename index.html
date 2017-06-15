@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link href="style.css" rel="stylesheet" />
+		<link href="bower_components/skeleton/css/skeleton.css" />
+		<script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
+		<script src="bower_components/socket.io-client/dist/socket.io.js" type="text/javascript"></script>
+		<script src="script.js" type="text/javascript"></script>
 	</head>
 
 	<body>
 
-		<table>
+		<table id="chat">
 
 			<tr>
 
 				<!-- message window -->
-				<td>
+				<td id="messages">
+
+					<table>
+					</table>
+
 				</td>
 
 				<!-- user list window -->
-				<td>
+				<td id="users">
+
+					<table>
+					</table>
+
 				</td>
 
 			</tr>
@@ -24,12 +37,12 @@
 
 				<!-- message input -->
 				<td>
-					<input id="messageInput" type="text"></input
+					<input id="messageInput" type="text"></input>
 				</td>
 
 				<!-- submission -->
 				<td>
-					<input id="messageSubmit" type="button"></input>
+					<input id="messageSubmit" type="button" value="Send"></input>
 				</td>
 
 			</tr>
